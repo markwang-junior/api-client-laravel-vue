@@ -3,24 +3,26 @@
     <!-- Título con el mensaje recibido como propiedad -->
     <h1>{{ msg }}</h1>
     
-    <!-- Aquí se incluirá el componente JsonApi -->
+    <!-- Aquí se incluirán los componentes JsonApi y CsvApi -->
     <JsonApi />
+    <CsvApi />
   </div>
 </template>
 
 <script>
-
 import JsonApi from './JsonApi.vue';
+import CsvApi from './CsvApi.vue';
 
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String
+    msg: String,
   },
   components: {
-    JsonApi 
-  }
-}
+    JsonApi,
+    CsvApi, // Añadimos el nuevo componente aquí
+  },
+};
 </script>
 
 <style scoped>
