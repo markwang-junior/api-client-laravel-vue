@@ -59,22 +59,6 @@ Levanta los contenedores con:
 
 docker-compose up -d
 Accede al frontend en http://localhost:8080 y al backend en http://localhost:8000.
-Estructura del proyecto
-plaintext
-
-api-client-karavek-vue/
-├── backend/          # Código del servidor Laravel
-│   ├── app/
-│   ├── database/
-│   ├── public/
-│   └── ...
-├── frontend/         # Código del cliente Vue.js
-│   ├── src/
-│   ├── public/
-│   └── ...
-├── docker-compose.yml
-├── README.md
-└── .gitignore
 
 Comandos útiles
 
